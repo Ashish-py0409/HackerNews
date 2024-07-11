@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  playwright: 
+    build: .
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    environment:
+      - PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+    command: npm test
