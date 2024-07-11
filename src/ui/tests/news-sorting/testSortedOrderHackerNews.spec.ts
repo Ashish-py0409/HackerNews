@@ -6,7 +6,7 @@ test.describe("Hacker News", () => {
         await newestPage.loadMorePagesAndValidateSorting();
     })
 
-    test.only("Verify front Hacker news are sorted @regression", async ({ frontPage }) => {
+    test("Verify front Hacker news are sorted @regression", async ({ frontPage }) => {
         await frontPage.goTo()
         await frontPage.loadMorePagesAndValidateSorting();
     })
