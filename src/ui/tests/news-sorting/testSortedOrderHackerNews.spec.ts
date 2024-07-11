@@ -11,4 +11,9 @@ test.describe("Hacker News", () => {
         await frontPage.loadMorePagesAndValidateSorting();
     })
 
+    test("Verify front Hacker news @regression", async ({ frontPage }) => {
+        await frontPage.goTo()
+        await frontPage.loadMorePagesAndValidateSorting();
+    })
+
 })
