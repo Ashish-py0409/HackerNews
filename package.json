@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:regression": "npx playwright test --grep @regression --project=chromium"
+    "test:regression": "npx playwright test --grep @regression --project=ui-tests"
   },
   "keywords": [],
   "author": "",

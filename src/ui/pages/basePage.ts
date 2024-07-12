@@ -56,7 +56,6 @@ export class BasePage {
                 if (moreLink) {
                     await moreLink.click();
                     await this.page.waitForLoadState('networkidle');
-                    await this.page.waitForTimeout(5000);
 
                     // Check if the "sorry" message is displayed
                     const sorryMessage = await this.page.evaluate(() => document.body.textContent?.includes('sorry'));
